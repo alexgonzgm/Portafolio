@@ -4,7 +4,7 @@ var router = express.Router();
 var projectController = require('../controlles/project.controller');
 
 //***** Rutas *****//
-router.post("project",projectController.saveProject);
+router.post("/project",projectController.saveProject);
 
 //exportamos las rutas del controlador project hacia app.js
 //donde esta la configuracion general
