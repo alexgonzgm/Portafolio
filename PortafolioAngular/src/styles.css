@@ -1,1 +1,209 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+/*******************General****************/
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url("./assets/img/bgBlueLines.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/*******************Navigation Bar ****************/
+.navbar{
+  padding : 0px 16px;
+
+}
+.spanAlex {
+  font-size: 25px ;
+  font-family: 'Merriweather', serif;
+}
+.navbar li {
+  margin: 0px 15px;
+  display: inline-flex;
+  text-align: center;
+  height: 47px;
+  line-height: 47px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.navbar a:hover , .activee{
+  background-color: rgba(255,255,255,0.7);
+  transition: all 400ms;
+  height: auto;
+  text-decoration: none;
+  box-shadow: 0px 0px 40px black;
+}
+/*******************Main Div****************/
+.content {
+  min-height:700px;
+  display: flex;
+  margin: 60px auto 20px;
+  padding: 0 16px;
+  width:85%;
+  flex-direction: column;
+  box-shadow:0px 0px 40px black;
+  background : rgba(255,255,255,0.7);
+}
+/*******************About****************/
+#title{
+    width:70%;
+    margin: 0px auto;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:100px;
+}
+#title h1 {
+    border-bottom: 1px solid #6c757d;
+    font-size:60px;
+}
+.about h2 {
+  border-bottom: 1px solid #6c757d;
+
+}
+.about h2 {
+  margin-right:10%;
+  margin-left:10%;
+}
+.about p {
+  text-align: justify;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+/******************* Form General****************/
+.container{
+    padding:50px;
+    padding-top:30px;
+}
+.about h2 {
+    border-bottom: 1px solid #6c757d;
+    display:block;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+form{
+    width : 100%;
+}
+form label{
+    display:block;
+    width:100%;
+    margin-top:10px;
+
+}
+form .btn {
+    margin-left: 10%;
+    box-shadow: 0px 0px 5px black;
+
+}
+form .btn[disabled]{
+    cursor : not-allowed;
+
+}
+form input[type='text'],
+form input[type='number'],
+form input[type='email'],
+form textarea {
+    width:50%;
+
+}
+.form_error{
+    padding:3px;    
+    color:red;
+    margin-left: 5px;
+
+}
+.message {
+    margin-left:10px;
+    margin-top:10px;
+    width:60%;
+    display:inline-flex;
+}
+.success {
+    box-shadow: 0px 0px 10px green;
+    color: green;
+    border-radius:3px 4px;
+}
+/*******************Main Div****************/
+footer {
+    width: 85%;
+    margin: 0px auto;
+    /*padding-top:15px;*/
+    padding-bottom: 10px;
+    color: rgba(0,0,0,0.5);
+}
+/*******************Projects****************/
+.project{
+    list-style:none;
+    display:block;
+    float:left;
+    width:27%;
+  margin-left:20px;
+  margin-right:20px;
+  margin-bottom:30px;
+}
+.project img {
+  overflow:hidden;
+  height: 150px;
+  width:100%;
+}
+.col-md-5 img {
+  overflow: hidden;
+  height: 180px;
+  width: 100%;
+}
+.project img{
+    width:100%;
+   
+}
+.project a {
+    text-decoration: none;
+    color: #17a2b8;
+}
+/*******************Details****************/
+.container .row a {
+  margin: 10px;
+  box-shadow: 0px 0px 10px rgba(255,255,255,0.7);
+  color:white;
+}
+
+
+
+/* Responsive Styles */
+/*@media screen and (max-width: 767px) {
+
+  .card-container > *:not(.circle-link),
+  .terminal {
+    width: 100%;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  .card.highlight-card span {
+    margin-left: 72px;
+  }
+
+  svg#rocket-smoke {
+    right: 120px;
+    transform: rotate(-5deg);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+}*/
