@@ -42,7 +42,7 @@ var controller = {
         var projectId = req.params.id;
         var update = req.body;
 
-        projectModel.findByIdAndUpdate(projecjId, update, { new: true }, (err, ProjectUpdate) => {
+        projectModel.findByIdAndUpdate(projectId, update, { new: true }, (err, ProjectUpdate) => {
             if (err) return res.status(500).send({ Error: err })
             if (!ProjectUpdate) return res.status(404).send({ messagge: 'Error al actualizar' });
             return res.status(200).send({ project: ProjectUpdate });
@@ -52,7 +52,7 @@ var controller = {
     deleteProject: function (req, res) {
         var projectId = req.params.id;
 
-        projectModel.findByIdAndDelete(projecjId, { new: true }, (err, ProjectDelete) => {
+        projectModel.findByIdAndDelete(projectId, (err, ProjectDelete) => {
             if (err) return res.status(500).send({ Error: err })
             if (!ProjectDelete) return res.status(404).send({ messagge: 'No existe el proyecto a borrar' });
             return res.status(200).send({ project: ProjectDelete });

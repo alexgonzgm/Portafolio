@@ -5,8 +5,8 @@ var projectController = require('../controlles/project.controller');
 
 //***** Rutas *****//
 router.post("/project",projectController.saveProject);
-router.get("/project",projectController.getProject);
-router.get("/projects",projectController.getProject);
+router.get("/project/:id",projectController.getProject);
+router.get("/projects",projectController.getProjects);
 router.put("/project/:id",projectController.updateProject);
 router.delete("/project/:id",projectController.deleteProject);
 
